@@ -1,0 +1,6 @@
+goos: darwin
+goarch: arm64
+pkg: avito/internal/app
+BenchmarkSlotsListParallel-8   	  831678	     24310 ns/op	   24378 B/op	     238 allocs/op
+PASS
+ok  	avito/internal/app	23.802s
