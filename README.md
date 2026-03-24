@@ -5,7 +5,7 @@ Go-сервис бронирования переговорок
 ## Запуск
 
 ```bash
-docker compose up --build
+make up
 ```
 
 Сервис доступен на `http://localhost:8080`.
@@ -14,9 +14,6 @@ docker compose up --build
 
 Миграции выполняются автоматически при старте сервиса через
 [`golang-migrate`](https://github.com/golang-migrate/migrate).
-
-- SQL-файлы: `internal/migrations`
-- В Docker используется `MIGRATIONS_PATH=file:///app/internal/migrations`
 
 ## Тесты
 
@@ -35,3 +32,13 @@ make loadtest
 - Сценарий и краткие результаты:
   - `loadtest/RESULTS.md`
   - raw benchmark output: `loadtest/benchmark.txt`
+
+## Сваггер 
+
+```bash
+make swagger
+make up
+```
+
+Открыть UI:
+http://localhost:8080/swagger/index.html

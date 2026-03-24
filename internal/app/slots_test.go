@@ -25,7 +25,7 @@ func TestValidateSchedule(t *testing.T) {
 
 func TestGenerateSlotsForDate(t *testing.T) {
 	sc := Schedule{RoomID: "r", DaysOfWeek: []int{1}, StartTime: "09:00", EndTime: "10:00"}
-	day := time.Date(2026, 3, 23, 0, 0, 0, 0, time.UTC) // Monday
+	day := time.Date(2026, 3, 23, 0, 0, 0, 0, time.UTC)
 	slots, err := GenerateSlotsForDate("r", sc, day)
 	if err != nil {
 		t.Fatal(err)

@@ -72,7 +72,7 @@ func GenerateSlotsForDate(roomID string, schedule Schedule, day time.Time) ([]Sl
 			break
 		}
 		slots = append(slots, Slot{
-			ID:     fmt.Sprintf("%d", cur.UnixNano()), // ignored by postgres, used only in tests
+			ID:     fmt.Sprintf("%d", cur.UnixNano()),
 			RoomID: roomID,
 			Start:  cur,
 			End:    next,

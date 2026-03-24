@@ -1,4 +1,4 @@
-module avito
+module github.com/zxcmisha/avito-test
 
 go 1.24.1
 

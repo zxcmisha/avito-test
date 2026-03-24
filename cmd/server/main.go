@@ -5,8 +5,9 @@ import (
 	"net/http"
 	"os"
 
-	_ "avito/docs"
-	"avito/internal/app"
+	"github.com/zxcmisha/avito-test/internal/app"
+
+	_ "github.com/zxcmisha/avito-test/docs"
 )
 
 func main() {
